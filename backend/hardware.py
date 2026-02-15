@@ -6,7 +6,7 @@ import logging
 
 # Configure hardware logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("TrailBackHW")
+logger = logging.getLogger("TrailSenseHW")
 
 class HardwareInterface(ABC):
     @abstractmethod
@@ -65,6 +65,6 @@ def get_hardware() -> HardwareInterface:
     """
     Factory to return the appropriate hardware interface based on environment.
     """
-    if os.environ.get("TRAILBACK_HW") == "SERIAL":
+    if os.environ.get("TRAILSENSE_HW") == "SERIAL":
         return ArduinoSerialHardware()
     return LocalHardware()

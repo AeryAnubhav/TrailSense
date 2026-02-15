@@ -5,7 +5,7 @@ import typing
 import os
 import requests
 import numpy as np
-from vision_core import TrailBackCore
+from vision_core import TrailSenseCore
 import uvicorn
 import time
 import argparse
@@ -25,7 +25,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--source", default=os.getenv("CAMERA_SOURCE", "0"), help="Camera source URL or ID")
 args, _ = parser.parse_known_args()
 
-core = TrailBackCore(camera_source=args.source)
+core = TrailSenseCore(camera_source=args.source)
 camera = None
 
 def get_camera():

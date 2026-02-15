@@ -4,7 +4,7 @@ import os
 import time
 from hardware import get_hardware
 
-class TrailBackCore:
+class TrailSenseCore:
     def __init__(self, camera_source=0):
         # Feature Extraction Configuration
         self.orb = cv2.ORB_create(nfeatures=1000)
@@ -28,7 +28,7 @@ class TrailBackCore:
         elif str(camera_source).isdigit():
             self.camera_source = int(camera_source)
             
-        print(f"Core Initialized. Source: {self.camera_source}")
+        print(f"TrailSense Core Initialized. Source: {self.camera_source}")
         
         if not os.path.exists(self.landmark_dir):
             os.makedirs(self.landmark_dir)

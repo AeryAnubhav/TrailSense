@@ -55,7 +55,7 @@ function App() {
             <header className="hud-header">
                 <div className="logo-section">
                     <ShieldCheck className="icon-shield pulse" />
-                    <h1 className="title">TRAIL<span>BACK</span>.AI</h1>
+                    <h1 className="title">TRAIL<span>SENSE</span></h1>
                 </div>
                 <div className="system-info">
                     <div className="info-item">
@@ -185,7 +185,7 @@ function App() {
             </main>
 
             <footer className="hud-footer">
-                <div>TRAILBACK OS // BUILD 2026.02.15</div>
+                <div>TRAILSENSE OS // BUILD 2026.02.15</div>
                 <div>SECURE CONNECTION ESTABLISHED</div>
             </footer>
         </div>

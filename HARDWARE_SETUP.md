@@ -1,7 +1,7 @@
 
-# TrailBack AI - Hardware Configuration
+# TrailSense - Hardware Configuration
 
-This guide explains how to deploy the TrailBack AI system on the Arduino Uno Q (or similar Linux-based boards) and connect the ESP32-CAM.
+This guide explains how to deploy the TrailSense system on the Arduino Uno Q (or similar Linux-based boards) and connect the ESP32-CAM.
 
 ## Hardware Setup
 
@@ -23,7 +23,7 @@ This guide explains how to deploy the TrailBack AI system on the Arduino Uno Q (
 
 3.  **Deploy Code**:
     - Copy the `backend/` folder to the board.
-    - Run: `CAMERA_SOURCE="http://<ESP32_IP>:81/stream" TRAILBACK_HW="SERIAL" python3 main.py`
+    - Run: `CAMERA_SOURCE="http://<ESP32_IP>:81/stream" TRAILSENSE_HW="SERIAL" python3 main.py`
 
 ## Software Configuration
 
@@ -32,7 +32,7 @@ This guide explains how to deploy the TrailBack AI system on the Arduino Uno Q (
 - **Production Mode (Board)**:
     - Set environment variables:
         - `CAMERA_SOURCE`: URL of ESP32 stream.
-        - `TRAILBACK_HW`: Set to `SERIAL` to enable hardware LED control via serial bridge.
+        - `TRAILSENSE_HW`: Set to `SERIAL` to enable hardware LED control via serial bridge.
 
 ## Architecture
 
